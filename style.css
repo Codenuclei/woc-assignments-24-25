@@ -97,7 +97,7 @@ a:hover::after {
 .container {
     display: flex;
     justify-content: center;
-    background-image: url('/public/assets/icons/AlbedoBase_XL_cool_winter_vibes_background_1.jpg');
+    background-image: url('https://codenuclei.github.io/woc-assignments-24-25/public/assets/icons/AlbedoBase_XL_cool_winter_vibes_background_1.jpg');
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ a:hover::after {
     border-radius: 6px;
     align-items: center;
     text-align: center;
-    background-image: url('/public/assets/icons/AlbedoBase_XL_winter_snow_fall_flakes_cool_2.jpg');
+    background-image: url('https://codenuclei.github.io/woc-assignments-24-25/public/assets/icons/AlbedoBase_XL_winter_snow_fall_flakes_cool_2.jpg');
     display: block;
     height: 40dvh;
     width: 25dvw;
@@ -427,7 +427,7 @@ body {
 }
 
 footer {
-    background-image: url('/public/assets/icons/AlbedoBase_XL_cool_amzing_blue_technology_background_footer_0.jpg');
+    background-image: url('https://codenuclei.github.io/woc-assignments-24-25/public/assets/icons/AlbedoBase_XL_cool_amzing_blue_technology_background_footer_0.jpg');
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
