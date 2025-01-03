@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg,#659eff,#5ffffc,#003cff);
+    background-repeat: no-repeat;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.box-player{
+    height: 75dvh;
+    width: 25dvw;
+    background-color: #406dff2e;
+    display: flex;
+    justify-content: center;
+    gap: 5dvh;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3dvh;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.r{
+    transform: rotate(180deg);
+}
+.player-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3dvh;
+}
+.music-box-image{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.music-box-image-circle{
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    animation: rotater 9.5s linear infinite;
+    z-index: 0;
+}
+@keyframes rotater {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.button-image{
+    height: 5dvh;
+    width: 5dvh;
+    border-radius: 100%;
+}
+.upper-button{
+    display: flex;
+    justify-content: space-between;
+    padding: 2dvh;
+}
+@media screen and (max-width: 768px) {
+    .box-player{
+        width: 90dvw;
+    }
+}
+.circle-stop{
+    height: 10dvh;
+    width: 10dvh;
+    position: fixed;
+    border-radius: 100%;
+    background-color: #6ae3e1;
+    z-index: 1;
+}
+
+.line-x{
+    height: 18dvh;
+    width: 18dvh;
+    position: fixed;
+    border-radius: 100%;
+    background-color: #6ae3e100;
+    outline: 1px solid rgb(83, 244, 255);
+    border: none;
+}
+.time-slide:hover{
+    background-color: #f3f3f3;
+}
+
+.time-slide{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 85%;
+    height: 1.5dvh;
+    border-radius: 5dvh;
+    
+}
+.time-slide::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 3dvh;
+    width: 3dvh;
+    background-color: #85efff;
+    border-radius: 100%;
+}
+.time-slide::-webkit-slider-thumb:hover{
+transform: scale(1.2);
+}
+.time-values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4dvh;
+    padding-top:0;
+    padding-bottom: 0;
+}

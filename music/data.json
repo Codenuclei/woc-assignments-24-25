@@ -1,0 +1,25 @@
+{
+    "data" :
+        {
+            "songs": [
+              {
+                "music_name": "Blue Eyes",
+                "description": "Blue Eyes by Yo Yo Honey Singh",
+                "url": "/music/src/BlueEyes-YoyoHoneySingh.m4a",
+                "image": "https://c.saavncdn.com/279/Blue-Eyes-2013-500x500.jpg"
+              },
+              {
+                "music_name": "Yaar Naa Miley",
+                "description": "Yaar Naa Miley from Kick by Yo Yo Honey Singh, Jasmine Sandlas",
+                "url": "/music/src/YaarNaMiley-Kick.m4a",
+                "image": "https://c.saavncdn.com/801/Kick-Hindi-2014-500x500.jpg"
+              },
+              {
+                "music_name": "Brown Rang",
+                "description": "Brown Rang from International Villager by Yo Yo Honey Singh",
+                "url": "/music/src/BrownRangYoyo.m4a",
+                "image": "https://c.saavncdn.com/blob/924/International-Villager-Punjabi-2011-20220722144441-500x500.jpg"
+              }
+            ]
+          }
+}
