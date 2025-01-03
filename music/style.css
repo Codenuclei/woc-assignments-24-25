@@ -1,3 +1,6 @@
+:root{
+    --slider-thumb-color : #85efff;
+}
 body{
     margin: 0;
     padding: 0;
@@ -103,7 +106,7 @@ body{
     cursor: pointer;
     height: 3dvh;
     width: 3dvh;
-    background-color: #85efff;
+    background-color:var(--slider-thumb-color);
     border-radius: 100%;
 }
 .time-slide::-webkit-slider-thumb:hover{

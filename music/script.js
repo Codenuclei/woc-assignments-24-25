@@ -5,6 +5,8 @@ const description = document.getElementById("song-desc");
 const progressBar = document.getElementById("time-slide");
 const currenttime = document.getElementById("current-time");
 const endtime = document.getElementById("end-time");
+const linex = document.getElementsByClassName("line-x");
+const circle = document.getElementsByClassName("circle-stop");
 
 const data = {
   songs: [
@@ -88,13 +90,27 @@ function theme() {
   const currentSrc = themeElement.src;
   if (currentSrc.includes("sun.png")) {
     themeElement.src = "src/moon.png";
-    body.style.backgroundImage = "linear-gradient(45deg,rgb(79, 32, 198),rgb(22, 49, 104),rgb(0, 148, 221))"; // Darker gradient for dark theme
+    body.style.backgroundImage =
+      "linear-gradient(45deg,rgb(79, 32, 198),rgb(22, 49, 104),rgb(0, 148, 221))"; // Darker gradient for dark theme
     body.style.backgroundColor = "#1a1a1a";
+    circle[0].style.backgroundColor = "rgba(25, 62, 156, 255)";
+    linex[0].style.outlineColor = circle[0].style.backgroundColor;
     body.style.color = "white";
+    document.documentElement.style.setProperty(
+      "--slider-thumb-color",
+      "rgba(36, 82, 220, 255)"
+    );
   } else {
-    themeElement.src = "src/sun.png"; 
-    body.style.backgroundImage = "linear-gradient(45deg, #659eff, #5ffffc, #003cff)";
-    body.style.backgroundColor = "white"; 
+    themeElement.src = "src/sun.png";
+    body.style.backgroundImage =
+      "linear-gradient(45deg, #659eff, #5ffffc, #003cff)";
+    body.style.backgroundColor = "white";
+    document.documentElement.style.setProperty(
+      "--slider-thumb-color",
+      "#85efff"
+    );
+    circle[0].style.backgroundColor = "#6ae3e1";
+    linex[0].style.outlineColor = circle[0].style.backgroundColor;
     body.style.color = "black";
   }
 }
